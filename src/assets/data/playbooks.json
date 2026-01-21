@@ -1,0 +1,69 @@
+[
+  {
+    "id": "pb-terraform",
+    "title": "Provisionar cluster seguro",
+    "description": "Terraform + policy checks para base cloud.",
+    "estimatedTime": "8 min",
+    "steps": [
+      {
+        "command": "terraform init",
+        "outputLines": [
+          "Inicializando backend...",
+          "Providers descargados.",
+          "Init completo ✅"
+        ],
+        "visualKey": "tf_vpc_on"
+      },
+      {
+        "command": "terraform plan -out=plan.tf",
+        "outputLines": [
+          "Plan: 12 to add, 0 to change, 0 to destroy.",
+          "Policy checks OK.",
+          "Plan generado ✅"
+        ],
+        "visualKey": "tf_subnets_on"
+      },
+      {
+        "command": "terraform apply plan.tf",
+        "outputLines": [
+          "Creando red y subredes...",
+          "Cluster listo con políticas." ,
+          "Apply completo ✅"
+        ],
+        "visualKey": "tf_cluster_on"
+      }
+    ]
+  },
+  {
+    "id": "pb-k8s",
+    "title": "Despliegue seguro en K8s",
+    "description": "Release con controles de seguridad.",
+    "estimatedTime": "6 min",
+    "steps": [
+      {
+        "command": "kubectl apply -f service.yaml",
+        "outputLines": [
+          "service/api created",
+          "service/api ready"
+        ],
+        "visualKey": "k8s_service_on"
+      },
+      {
+        "command": "kubectl apply -f deployment.yaml",
+        "outputLines": [
+          "deployment/api created",
+          "pods scaling to 3"
+        ],
+        "visualKey": "k8s_pod_on"
+      },
+      {
+        "command": "kubectl apply -f ingress.yaml",
+        "outputLines": [
+          "ingress/api created",
+          "routing ready"
+        ],
+        "visualKey": "k8s_ingress_on"
+      }
+    ]
+  }
+]
