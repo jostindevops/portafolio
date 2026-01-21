@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+ * Global styling overrides and utility classes. These ensure the app uses
+ * the desired fonts and provides a consistent baseline for the dark theme.
+ */
+body {
+  @apply font-sans text-gray-300;
+}
+
+/* Example shadows for glow effects. You can apply these classes via
+ * Tailwind’s `shadow-neon-cyan` or `shadow-neon-green` utilities.
+ */
+.shadow-neon-cyan {
+  box-shadow: 0 0 10px theme('colors.neon-cyan');
+}
+.shadow-neon-green {
+  box-shadow: 0 0 10px theme('colors.terminal-green');
+}

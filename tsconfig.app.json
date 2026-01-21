@@ -1,0 +1,18 @@
+/*
+ * This configuration inherits from the base tsconfig.json and simply
+ * forwards compilation of the application source files to the out-tsc
+ * directory. It excludes test files and other non-application code.
+ */
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "outDir": "./out-tsc/app",
+    "types": []
+  },
+  "files": [
+    "src/main.ts"
+  ],
+  "include": [
+    "src/**/*.d.ts"
+  ]
+}
