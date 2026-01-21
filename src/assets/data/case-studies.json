@@ -1,0 +1,41 @@
+[
+  {
+    "id": "cs-01",
+    "title": "Plataforma financiera resiliente",
+    "summary": "Migración segura con reducción de incidentes críticos.",
+    "problem": "Arquitectura monolítica con downtime recurrente y falta de visibilidad.",
+    "solution": "Diseño de plataforma cloud nativa con observabilidad full-stack y pipelines seguros.",
+    "impactMetrics": [
+      "-35% tiempo de despliegue",
+      "+18% disponibilidad",
+      "-22% costos cloud"
+    ],
+    "techTags": ["AWS", "Kubernetes", "Terraform"]
+  },
+  {
+    "id": "cs-02",
+    "title": "Retail omnicanal",
+    "summary": "Escalamiento automático para picos de demanda.",
+    "problem": "Infraestructura rígida que no soportaba campañas masivas.",
+    "solution": "Arquitectura autoscale con políticas FinOps y guardrails de seguridad.",
+    "impactMetrics": [
+      "+40% throughput",
+      "-28% costos de operación",
+      "0 incidentes críticos"
+    ],
+    "techTags": ["GCP", "SRE", "FinOps"]
+  },
+  {
+    "id": "cs-03",
+    "title": "HealthTech compliance",
+    "summary": "Cumplimiento HIPAA con controles automatizados.",
+    "problem": "Auditorías manuales y procesos inseguros.",
+    "solution": "Policy-as-code, CI/CD seguro y monitoreo continuo.",
+    "impactMetrics": [
+      "-50% tiempo de auditoría",
+      "+30% cobertura de seguridad",
+      "SLA 99.99%"
+    ],
+    "techTags": ["Azure", "Security", "Policy"]
+  }
+]

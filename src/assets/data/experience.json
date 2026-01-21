@@ -1,0 +1,24 @@
+[
+  {
+    "id": "exp-01",
+    "role": "Lead DevSecOps Architect",
+    "org": "FinTech LATAM",
+    "dates": "2023 — Hoy",
+    "bullets": [
+      "Automatización de seguridad en pipelines críticos.",
+      "Implementación de observabilidad con SLIs y SLOs.",
+      "Optimización FinOps con ahorro anual del 20%."
+    ]
+  },
+  {
+    "id": "exp-02",
+    "role": "Cloud Security Engineer",
+    "org": "HealthTech",
+    "dates": "2021 — 2023",
+    "bullets": [
+      "Zero Trust para entornos clínicos.",
+      "Controles de cumplimiento automatizados.",
+      "Gestión de incidentes con respuesta 24/7."
+    ]
+  }
+]

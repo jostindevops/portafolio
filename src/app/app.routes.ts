@@ -1,11 +1,15 @@
 import { Routes } from '@angular/router';
-import { DashboardComponent } from './dashboard.component';
+import { HomePageComponent } from './pages/home-page.component';
+import { AboutPageComponent } from './pages/about-page.component';
+import { LabPageComponent } from './pages/lab-page.component';
+import { BusinessPageComponent } from './pages/business-page.component';
+import { ConnectPageComponent } from './pages/connect-page.component';
 
-/**
- * The application’s route configuration. This simple configuration directs
- * the root path to the dashboard component. Additional routes can be added
- * here as new features are implemented.
- */
 export const appRoutes: Routes = [
-  { path: '', component: DashboardComponent },
+  { path: '', component: HomePageComponent },
+  { path: 'about', component: AboutPageComponent },
+  { path: 'lab', component: LabPageComponent },
+  { path: 'business', component: BusinessPageComponent },
+  { path: 'connect', component: ConnectPageComponent },
+  { path: '**', redirectTo: '' },
 ];
